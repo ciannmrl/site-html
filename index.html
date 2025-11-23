@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">CIANN MOREL</div>
+    <nav>
+      <a href="#features">Fonctionnalités</a>
+      <a href="#contact">Contact</a>
+      <a href="#" id="themeBtn">Basculer thème</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Bienvenue sur votre site test</h1>
+      <p class="lead">Une page d'exemple propre et responsive — HTML, CSS et JS.</p>
+      <a class="btn" href="#contact">Me contacter</a>
+    </section>
+
+    <section id="features" class="features">
+      <div class="feature">
+        <h3>Layout responsive</h3>
+        <p>S'adapte aux mobiles et écrans larges.</p>
+      </div>
+      <div class="feature">
+        <h3>Composants simples</h3>
+        <p>Cartes, boutons, formulaires prêts à l'emploi.</p>
+      </div>
+      <div class="feature">
+        <h3>Facile à modifier</h3>
+        <p>Code clair et commenté pour itérer vite.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contactez-nous</h2>
+          <form id="contactForm" action="/contact" method="post">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
+      <p id="formNotice" class="small"></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 — Site test • Fait avec ♥
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

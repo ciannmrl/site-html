@@ -1,0 +1,124 @@
+/* Styles généraux */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f1724;
+  color: #e6eef6;
+  line-height: 1.5;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #0b1220;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #60a5fa;
+}
+
+nav a {
+  color: #9aa4b2;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+}
+
+.hero .lead {
+  margin-bottom: 20px;
+  color: #9aa4b2;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #60a5fa;
+  color: #072033;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.feature {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.contact {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: transparent;
+  color: #e6eef6;
+}
+
+button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #60a5fa;
+  color: #072033;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #9aa4b2;
+}
+
+.small {
+  font-size: 12px;
+  color: #9aa4b2;
+}
+
+/* JS Theme toggle */
+body.light {
+  background: #ffffff;
+  color: #072033;
+}
+
+body.light header {
+  background: #f0f0f0;
+}
+
+body.light .feature {
+  background: rgba(0,0,0,0.05);
+}
